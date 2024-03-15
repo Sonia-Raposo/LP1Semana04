@@ -4,9 +4,19 @@ using System.Xml.XPath;
 
 namespace BetterDecorator
 {
-    class Program
+    
+    /// <summary>
+        /// Program receives 3 args and converts to string, char and int
+        /// </summary>
+        class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+                /// Checks if 3 arguments have been inserted
+                /// If yes, calls Decor with 3 params
+                /// If no, calls Decor with no params
+                /// </summary>
+                /// <param name="args"></param>
+                static void Main(string[] args)
         {
             if(args.Length >= 3)
             {
