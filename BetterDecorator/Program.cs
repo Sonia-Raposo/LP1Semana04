@@ -8,7 +8,25 @@ namespace BetterDecorator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            if(args.Length >= 3)
+            {
+                string s = args[0];
+
+                char c =  char.Parse(args[1]);
+
+                int i = int.Parse(args[2]);
+
+                string result = Decor(s, c, i);
+
+                Console.WriteLine(result);
+
+            }
+
+            //calls Decor with no arguments
+            else
+            {
+                Console.WriteLine(Decor());  
+            }
         }
 
         private static string Decor(string s, char decor, int i)
