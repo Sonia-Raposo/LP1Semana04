@@ -31,11 +31,11 @@ namespace BetterDecorator
             }
 
             return result;
+        }
 
-
-
-                
-
+        private static string Decor()
+        {
+            return Decor("User did not specify args!", '=',3);
 
         }
     }
