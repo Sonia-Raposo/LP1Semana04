@@ -6,17 +6,17 @@ namespace BetterDecorator
 {
     
     /// <summary>
-        /// Program receives 3 args and converts to string, char and int
-        /// </summary>
-        class Program
+    /// Program receives 3 args and converts to string, char and int
+    /// </summary>
+    class Program
     {
         /// <summary>
-                /// Checks if 3 arguments have been inserted
-                /// If yes, calls Decor with 3 params
-                /// If no, calls Decor with no params
-                /// </summary>
-                /// <param name="args"></param>
-                static void Main(string[] args)
+        /// Checks if 3 arguments have been inserted
+        /// If yes, calls Decor with 3 params
+        /// If no, calls Decor with no params
+        /// </summary>
+        /// <param name="args"></param>
+        static void Main(string[] args)
         {
             if(args.Length >= 3)
             {
@@ -39,6 +39,13 @@ namespace BetterDecorator
             }
         }
 
+        /// <summary>
+        /// Decor method that accepts 3 args (string, char and int)
+        /// </summary>
+        /// <param name="s"></param>
+        /// <param name="decor"></param>
+        /// <param name="i"></param>
+        /// <returns></returns>
         private static string Decor(string s, char decor, int i)
         {
             
